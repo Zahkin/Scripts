@@ -20,3 +20,4 @@ echo "[+] Validating active subdomains with httprobe..."
 awk '!seen[$0]++' ./$dom/asset_$dom.txt | httprobe > ./$dom/$dom.txt
 
 echo "[+] Done"
+echo "[!]Final results saved in "$dom".txt file[!]"
